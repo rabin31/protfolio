@@ -6,46 +6,72 @@ const Contact = () => {
 
   return (
     <div
-    data-scroll 
-      data-scroll-section 
-      data-scroll-speed="-.3" className='w-full lg:h-[50vw] mt-10 h-[80vw] bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl text-black'>
-      <div className='flex pt-16 justify-center'>
-        <h1 className='text-[10vw] font-bold uppercase leading-none text-center'>
-          READY <br /> TO START<br /> THE PROJECT?
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-.3"
+      className="w-full mt-10 h-[90vw] md:h-[70vw] lg:h-[50vw] bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl text-black flex flex-col justify-between"
+    >
+      <div className="pt-14 px-4 sm:px-10 text-center">
+        <h1 className="text-[11vw] sm:text-[9vw] md:text-[7vw] lg:text-[7vw] font-bold uppercase leading-none">
+          READY <br /> TO START <br /> THE PROJECT?
         </h1>
       </div>
-      <div className='flex justify-center'>
+
+      <div className="flex justify-center mt-10 px-4">
         <button
           onClick={() => setIsOpen(true)}
-          className="flex items-center justify-between gap-4 px-8 py-5 bg-zinc-900 mt-10 rounded-full text-white uppercase text-base hover:bg-zinc-800 transition-all duration-300"
+          className="flex items-center justify-between gap-4 px-6 sm:px-8 py-4 sm:py-5 bg-zinc-900 rounded-full text-white uppercase text-sm sm:text-base hover:bg-zinc-800 transition-all duration-300"
         >
           Start The Project
-          <div className='h-3 w-3 bg-white rounded-full'></div>
+          <div className="h-3 w-3 bg-white rounded-full"></div>
         </button>
       </div>
+
       {isOpen && (
-        <div className='fixed inset-0 bg-black bg-opacity-100 mt-20 flex justify-center items-center'>
-          <div className='bg-[#CDEA68] p-6 rounded-xl shadow-lg w-[90%] max-w-md relative'>
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex justify-center items-center px-4">
+          <div className="bg-[#CDEA68] p-5 sm:p-6 rounded-xl shadow-lg w-full max-w-md relative">
             <button
               onClick={() => setIsOpen(false)}
-              className='absolute top-4 right-4 text-zinc-900 text-2xl'
+              className="absolute top-4 right-4 text-zinc-900 text-2xl"
             >
               <FaTimes />
             </button>
-            <h2 className='text-zinc-900 text-2xl font-bold text-center mb-4'>Start Your Project</h2>
-            <form className='flex flex-col gap-4'>
-              <input type='text' placeholder='Your Name' className='p-3 border border-zinc-900 rounded-lg' />
-              <input type='email' placeholder='Your Email' className='p-3 border border-zinc-900 rounded-lg' />
-              <input type='text' placeholder='Service Needed' className='p-3 border border-zinc-900 rounded-lg' />
-              <textarea placeholder='Your Message' className='p-3 border border-zinc-900 rounded-lg h-24'></textarea>
-              <button className='bg-zinc-900 text-white py-3 rounded-lg hover:bg-zinc-800 transition-all duration-300'>Send</button>
+            <h2 className="text-zinc-900 text-xl sm:text-2xl font-bold text-center mb-4">
+              Start Your Project
+            </h2>
+            <form className="flex flex-col gap-4">
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="p-3 border border-zinc-900 rounded-lg text-sm"
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="p-3 border border-zinc-900 rounded-lg text-sm"
+              />
+              <input
+                type="text"
+                placeholder="Service Needed"
+                className="p-3 border border-zinc-900 rounded-lg text-sm"
+              />
+              <textarea
+                placeholder="Your Message"
+                className="p-3 border border-zinc-900 rounded-lg h-24 text-sm resize-none"
+              ></textarea>
+              <button className="bg-zinc-900 text-white py-3 rounded-lg hover:bg-zinc-800 transition-all duration-300 text-sm font-semibold">
+                Send
+              </button>
             </form>
           </div>
         </div>
       )}
-      <div className='flex justify-between items-center pt-5 p-10'>
-        <h1 className='hover:underline cursor-pointer'>Website by Rabin</h1>
-        <p className='hover:underline cursor-pointer'>© Rabin Thapa 2025. Legal Terms</p>
+
+      <div className="flex flex-col sm:flex-row justify-between items-center text-white lg:text-black pt-30 lg:pt-10 px-6 sm:px-10 text-sm sm:text-base space-y-2 sm:space-y-0 pb-6">
+        <h1 className="hover:underline cursor-pointer text-center sm:text-left">Website by Rabin</h1>
+        <p className="hover:underline cursor-pointer text-center sm:text-right">
+          © Rabin Thapa 2025. Legal Terms
+        </p>
       </div>
     </div>
   );

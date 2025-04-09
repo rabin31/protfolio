@@ -28,7 +28,7 @@ const LandingPage = () => {
   }, [index])
 
   return (
-    <div data-scroll data-scroll-section data-scroll-speed="-.3" className='w-full min-h-screen bg-zinc-900 pt-1'>
+    <div data-scroll data-scroll-section data-scroll-speed="-.3" className='w-full lg:min-h-screen bg-zinc-900 pt-1'>
 
       <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
         <div className="text-left md:max-w-xl md:mx-auto md:text-center mt-50">
