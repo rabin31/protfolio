@@ -48,7 +48,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className='border-t border-zinc-800 mt-12 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 py-6 px-6 sm:px-10 md:px-16 lg:px-20'>
+      <div className='border-t border-zinc-800 mt-15 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 py-6 px-6 sm:px-10 md:px-16 lg:px-20'>
         <div className='flex flex-col gap-2 text-zinc-300'>
           {["Currently Availabe for Freelance", "My Local time: Nepal (UTC+5:45)"].map((item, index) => (
             <p key={index} className='text-sm sm:text-base hover:underline hover:cursor-pointer font-light tracking-tight leading-snug'>
