@@ -8,6 +8,9 @@ import Item5 from '../assets/gd5.png';
 import Item6 from '../assets/gd6.png';
 import Item7 from '../assets/gd7.jpeg';
 import Item8 from '../assets/gd8.jpeg';
+import Item9 from '../assets/gd9.png'
+import Item10 from '../assets/gd10.png'
+
 
 const Designs = () => {
   return (
@@ -97,5 +100,7 @@ const cards = [
   { url: Item5, id: 5 },
   { url: Item6, id: 6 },
   { url: Item7, id: 7 },
-  { url: Item8, id: 8 }
+  { url: Item8, id: 8 },
+  { url: Item9, id: 9},
+  { url: Item10, id: 10}
 ];
